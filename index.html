@@ -1,20 +1,695 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Karen's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Karen | Electrical & Electronics Engineering</title>
+
+    <meta name="description"
+        content="Electrical & Electronics Engineering student portfolio showcasing university projects, engineering experience and technical skills.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
+
 <body>
-    <h1>Hello, I'm Karen!</h1>
-    <p>Welcome to my engineering project portfolio.</p>
 
-    <h2>My Projects</h2>
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
 
-    <h3>Modbus Fan Control System</h3>
-    <p>A Raspberry Pi Pico-based fan control system using Modbus RTU and Node-RED.</p>
+    <header class="navbar">
 
-    <h3>Water Tank Monitoring System</h3>
-    <p>An IoT-based water monitoring and pump control system using MQTT.</p>
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                KAREN<span>.</span>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+            <a href="#contact" class="nav-button">
+                Let's Connect
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-grid"></div>
+
+            <div class="hero-container">
+
+                <div class="hero-content">
+
+                    <p class="eyebrow">
+                        ELECTRICAL & ELECTRONICS ENGINEERING
+                    </p>
+
+                    <h1>
+                        Building ideas into
+                        <span>engineering solutions.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        A collection of projects, experiments and
+                        engineering experiences throughout my university journey.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="button button-primary">
+                            Explore My Projects
+                            <span>→</span>
+                        </a>
+
+                        <a href="#about" class="button button-secondary">
+                            About Me
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Engineering graphic -->
+
+                <div class="hero-visual">
+
+                    <div class="circuit-card">
+
+                        <div class="circuit-header">
+                            <span>ENGINEERING</span>
+                            <span class="status-dot"></span>
+                        </div>
+
+                        <div class="circuit-diagram">
+
+                            <div class="node node-1"></div>
+                            <div class="node node-2"></div>
+                            <div class="node node-3"></div>
+                            <div class="node node-4"></div>
+
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+
+                        </div>
+
+                        <div class="circuit-footer">
+                            <span>POWER</span>
+                            <span>CONTROL</span>
+                            <span>EMBEDDED</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="scroll-indicator">
+                <span></span>
+                SCROLL TO EXPLORE
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section id="about" class="section about">
+
+            <div class="section-container">
+
+                <div class="section-label">
+                    01 — ABOUT
+                </div>
+
+                <div class="about-content">
+
+                    <div>
+
+                        <h2>
+                            Curious about how
+                            things work.
+                        </h2>
+
+                    </div>
+
+
+                    <div class="about-text">
+
+                        <p>
+                            I am an Electrical & Electronics Engineering
+                            student with an interest in electrical power systems,
+                            renewable energy, embedded systems and engineering design.
+                        </p>
+
+                        <p>
+                            Throughout my university studies, I have worked on
+                            projects involving microcontrollers, communication
+                            protocols, control systems, power electronics and
+                            electrical engineering.
+                        </p>
+
+                        <p>
+                            This portfolio documents the projects and experiences
+                            that have shaped my development as an engineer.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <section id="projects" class="section projects">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <div class="section-label">
+                        02 — PROJECTS
+                    </div>
+
+                    <div>
+                        <h2>
+                            Things I've built.
+                        </h2>
+
+                        <p>
+                            Selected projects from my university journey.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Project Grid -->
+
+                <div class="project-grid">
+
+
+                    <!-- Project 1 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <div class="image-placeholder">
+                                <span>PROJECT IMAGE</span>
+                            </div>
+
+                            <div class="project-number">
+                                01
+                            </div>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <div class="project-tags">
+
+                                <span>RP2040</span>
+                                <span>MODBUS</span>
+                                <span>NODE-RED</span>
+
+                            </div>
+
+                            <h3>
+                                Smart Fan Control System
+                            </h3>
+
+                            <p>
+                                A microcontroller-based fan control system
+                                integrating speed control, proximity detection
+                                and Modbus communication.
+                            </p>
+
+                            <a href="#" class="project-link">
+                                View Project →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 2 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <div class="image-placeholder">
+                                <span>PROJECT IMAGE</span>
+                            </div>
+
+                            <div class="project-number">
+                                02
+                            </div>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <div class="project-tags">
+
+                                <span>MQTT</span>
+                                <span>PYTHON</span>
+                                <span>IOT</span>
+
+                            </div>
+
+                            <h3>
+                                Water Tank Control System
+                            </h3>
+
+                            <p>
+                                An IoT-based monitoring and control system
+                                designed to monitor water conditions and
+                                automate pump operation.
+                            </p>
+
+                            <a href="#" class="project-link">
+                                View Project →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 3 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <div class="image-placeholder">
+                                <span>PROJECT IMAGE</span>
+                            </div>
+
+                            <div class="project-number">
+                                03
+                            </div>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <div class="project-tags">
+
+                                <span>POWER</span>
+                                <span>MATLAB</span>
+                                <span>SIMULINK</span>
+
+                            </div>
+
+                            <h3>
+                                Power Electronics Project
+                            </h3>
+
+                            <p>
+                                Analysis and simulation of power electronic
+                                circuits, switching behaviour and control
+                                techniques.
+                            </p>
+
+                            <a href="#" class="project-link">
+                                View Project →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 4 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <div class="image-placeholder">
+                                <span>PROJECT IMAGE</span>
+                            </div>
+
+                            <div class="project-number">
+                                04
+                            </div>
+
+                        </div>
+
+                        <div class="project-info">
+
+                            <div class="project-tags">
+
+                                <span>EMBEDDED</span>
+                                <span>SENSORS</span>
+                                <span>OLED</span>
+
+                            </div>
+
+                            <h3>
+                                Embedded Monitoring System
+                            </h3>
+
+                            <p>
+                                A sensor-based embedded system combining
+                                real-time measurement, visual feedback
+                                and user interaction.
+                            </p>
+
+                            <a href="#" class="project-link">
+                                View Project →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EXPERIENCE
+        ========================== -->
+
+        <section id="experience" class="section experience">
+
+            <div class="section-container">
+
+                <div class="section-label">
+                    03 — EXPERIENCE
+                </div>
+
+                <div class="experience-layout">
+
+                    <div>
+
+                        <h2>
+                            From classroom
+                            to real-world
+                            engineering.
+                        </h2>
+
+                    </div>
+
+
+                    <div class="experience-card">
+
+                        <div class="experience-top">
+
+                            <span class="experience-year">
+                                2026
+                            </span>
+
+                            <span class="experience-type">
+                                INTERNSHIP
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Electrical Engineering Intern
+                        </h3>
+
+                        <p class="company">
+                            Sarawak Energy
+                        </p>
+
+                        <p>
+                            Gained practical exposure to electrical
+                            distribution planning, solar PV applications,
+                            project documentation and site activities.
+                        </p>
+
+
+                        <div class="experience-points">
+
+                            <div>
+                                <span>01</span>
+                                NEM Applications
+                            </div>
+
+                            <div>
+                                <span>02</span>
+                                Distribution Planning
+                            </div>
+
+                            <div>
+                                <span>03</span>
+                                Solar PV
+                            </div>
+
+                            <div>
+                                <span>04</span>
+                                Site Experience
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section id="skills" class="section skills">
+
+            <div class="section-container">
+
+                <div class="section-label">
+                    04 — SKILLS
+                </div>
+
+                <div class="skills-header">
+
+                    <h2>
+                        Tools I use to
+                        <span>build & solve.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+
+                    <div class="skill-category">
+
+                        <span class="skill-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Electrical
+                        </h3>
+
+                        <div class="skill-list">
+
+                            <span>Power Systems</span>
+                            <span>Power Electronics</span>
+                            <span>Circuit Analysis</span>
+                            <span>Solar PV</span>
+                            <span>Control Systems</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-category">
+
+                        <span class="skill-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Embedded
+                        </h3>
+
+                        <div class="skill-list">
+
+                            <span>Raspberry Pi Pico</span>
+                            <span>Arduino</span>
+                            <span>Microcontrollers</span>
+                            <span>Sensors</span>
+                            <span>OLED / Displays</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-category">
+
+                        <span class="skill-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Software
+                        </h3>
+
+                        <div class="skill-list">
+
+                            <span>Python</span>
+                            <span>MATLAB / Simulink</span>
+                            <span>LTSpice</span>
+                            <span>Node-RED</span>
+                            <span>Git / GitHub</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-category">
+
+                        <span class="skill-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Communication
+                        </h3>
+
+                        <div class="skill-list">
+
+                            <span>MQTT</span>
+                            <span>Modbus RTU</span>
+                            <span>Wireshark</span>
+                            <span>Networking</span>
+                            <span>IoT Systems</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section id="contact" class="contact">
+
+            <div class="contact-grid"></div>
+
+            <div class="contact-container">
+
+                <p class="eyebrow">
+                    05 — CONTACT
+                </p>
+
+                <h2>
+                    Let's build something
+                    <span>meaningful.</span>
+                </h2>
+
+                <p>
+                    Interested in engineering, technology or collaboration?
+                    Feel free to get in touch.
+                </p>
+
+                <div class="contact-buttons">
+
+                    <a href="mailto:your-email@example.com"
+                        class="button button-primary">
+                        Email Me →
+                    </a>
+
+                    <a href="https://github.com/"
+                        class="button button-secondary"
+                        target="_blank">
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <span>
+                © 2026 Karen
+            </span>
+
+            <span>
+                Electrical & Electronics Engineering
+            </span>
+
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
